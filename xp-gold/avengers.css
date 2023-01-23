@@ -1,0 +1,58 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    body {
+        background-image: url("./avengerslogo/hero.jpg");
+        background-size: cover;
+    }
+    
+    nav {
+        background: rgb(12, 2, 2);
+        height: 84px;
+        width: 100%;
+    }
+    
+    .navlist {
+        margin-left: 70vw;
+    }
+    
+    li {
+        display: inline;
+        line-height: 80px;
+        margin: 0 5px;
+        float: left;
+    }
+    
+    a {
+        color: whitesmoke;
+        font-size: 17px;
+        text-transform: uppercase;
+        padding: 17px 13px;
+        border-radius: 10px;
+        display: inline;
+    }
+    
+    .hero-form {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1 {
+        text-transform: uppercase;
+        font-size: 250%;
+        display: flex;
+        text-align: left;
+    }
+    
+    #title {
+        font-size: 120px;
+        margin-top: 50vh;
+    }
