@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat;
+}
+
+nav {
+    background: rgb(12, 2, 2);
+    height: 84px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 84px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: whitesmoke;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 10px;
+}
+
+a.active,
+a:hover {
+    background: grey;
+    transition: 0.5s;
+}
+
+
+/* .footer {
+                                            position: fixed;
+                                            left: 0;
+                                            bottom: 0;
+                                            width: 100%;
+                                            color: black;
+                                            text-align: right; */
+
+
+}
+header {
+    text-align: center;
+}
+section {
+    position: relative;
+}
+section.next {
+    height: 100px;
+    padding: 0 40px 0 40px;
+}
+.btn-sign-in {
+    height: 35px;
+    ;
+}
+.img-hero {
+    width: 100%;
+    height: auto;
+}
+.hero-form {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.15);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-box {
+    width: 400px;
+    height: 200px;
+}
+.form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.form input {
+    flex-grow: 1;
+}
+.form button {
+    margin-left: 8px;
+}
+.title {
+    color: whitesmoke;
+}
+.btn-signup {
+    width: 80px;
+}
+p {
+    color: black;
+    font-size: large;
+    margin-bottom: 2px;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+div.footer {
+    text-align: right;
+}

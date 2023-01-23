@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 30px 0 0 0;
+}
+
+.card-grey {
+    background-color: lightgrey;
+}
+
+.img {
+    display: inline-block;
+    border: 5pxb;
+    padding: 25px;
+    width: 80%;
+}
