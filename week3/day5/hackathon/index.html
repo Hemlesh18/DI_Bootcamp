@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="styleSheet" href="./style.css"></link>
+    <link rel="styleSheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class=" weather-app ">
+        <div class="container ">
+            <h3 class="brand ">the weather</h3>
+        </div>
+        <h1 class="temp ">16&#176;</h1>
+        <div class="city-time ">
+            <h1 class="name ">London</h1>
+            <small>
+                <span class="time ">06:09</span>
+                <span class="date ">friday jan 03</span>
+            </small>
+            <div class="weather ">
+                <img src="./weather/day/113.png " class="weather " alt="weather " width="50 " height="50 " />
+                <span class="condition ">Cloudy</span>
+            </div>
+        </div>
+    </div>
+    <div class="panel ">
+        <form id="LocationInput ">
+            <input type="text " class="search " placeholder="search Location... "></input>
+            <button type="submit " class="submit ">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+        <ul class="cities ">
+            <li class="city">New Yoke</li>
+            <li class="city">california</li>
+            <li class="city">paris</li>
+            <li class="city">tokyo</li>
+        </ul>
+        <ul class="detail">
+            <h4>weather Details</h4>
+            <li><span>Cloudy</span>
+                <span class="cloud">89%</span>
+            </li>
+            <li><span>Humidity</span>
+                <span class="humidity">64%</span></li>
+            <li><span>Wind</span>
+                <span class="wind">8km/h</span></li>
+        </ul>
+
+    </div>
+    <script src=" ./main.js "></script>
+</body>
+
+</html>
