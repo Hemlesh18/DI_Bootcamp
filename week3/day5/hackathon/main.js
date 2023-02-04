@@ -1,0 +1,88 @@
+const app = document.querySelector(".weather-app");
+const temp = document.querySelector(".temp");
+const date = document.querySelector(".date");
+const time = document.querySelector(".time");
+const condition = document.querySelector(".condition");
+const name = document.querySelector(".name");
+const icon = document.querySelector(".icon");
+const cloudOut = document.querySelector(".cloud");
+const humidityOutput = document.querySelector(".humidity");
+const windOutput = document.querySelector(".wind");
+const form = document.getElementById("locationInput");
+const search = document.querySelector(".search");
+const btn = document.querySelector(".submit");
+const cities = document.querySelector(".city");
+let cityInput = "london";
+cities.foreach((city) => {
+    city.eventlistener('click', (e) => {
+        cityInput + e.target.innerHTML;
+        fetchWeatherData();
+        app.style.opacity = "0"
+    })
+})
+form.addEventListener('submit', (e) => {
+    if (search.ariaValueMax.length == 0) { alert('please type in a city name'); } else {
+        cityInput = search.Value;
+        fetchWeatherData();
+        search.value = "";
+        app.style.opacity = "0"
+    }
+    e.preventDefault();
+})
+
+function dayOfTheWeek(day, month, year) {
+    const weekday = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"];
+    return weekday[new Date(`${day}/${month}/${year}`).getDay()];
+};
+
+function fetchWeatherData() {
+    fetch('http: //api.weatherapi.com/v1/current.json?key=f8e37d46e4f24a9ebc1163118230302&q=London&aqi=no)=${cityInput}')
+        .then(response => respond.json()).them(data => {
+                console.log(data);
+                temp.innerHtml = data.current.temp_c + "&deg;";
+                conditionOutput.innerHtml = data.current.condition.text;
+                const date = data.location.localtime;
+                const y = parseInt(data.substr(0, 4));
+                const m = parseInt(data.substr(5, 2));
+                const d = parseInt(data.substr(8, 2));
+                const time = date.substr(11);
+                dateOutput.innerHtml = `${dayOfTheWeek(d,m,y)}${d},${m},${y}`
+                timeOutput.innerHTML = time;
+                nameOutput.innerHTML = date.location.name;
+                const iconID = data.current.condition.icon.subdtr("//cdn.weatherapi.com/weather/64x64/".length);
+                icon.src = "./icon/" + iconID;
+                cloudOut.innerHtml = data.current.cloud + "%";
+                humidityOutput = data.current.humidity + "%";
+                windOutput.innerHTML = data.current.wind_kph + "km/h";
+                let timeOfDay = "day";
+                const code = data.currten.condition.code;
+                if (!date.current.is_day) { timeOfDay = "night" }
+                if (code == 1000) {
+                    app.style.backgroundImage = `url(./weather/${timeOfDay}/clear.jpg)`;
+                    btn.style.background = "#e5ba92"
+                    if (timeOfDay == "night") {
+                        btn.style.background = "#181e27"
+                    }
+                } else if (code == 113 || code == 116 || code == 119 || code == 1030 || code == 1069 || code == 1087 || code == 1135 || code == 1273 || code == 1276 || code == 1279 || code == 1282) {
+                    app.style.backgroundImaged = `url(./weather/${timeOfDay}/cloudy..jpg)`
+                    btn.style.background = "#fa6d1b";
+                    if (timeOfDay == "night") { btn.style.background = "#181e27"; } else if (code == 113 || code == 116 || code == 119 || code == 1030 || code == 1069 || code == 1087 || code == 1135 || code == 1273 || code == 1276 || code == 1279 || code == 1282) {
+                        app.style.background = `url(./image/${timeOfDay}/rain.avif)`;
+                        btn.style.background = "#647d75";
+                        if (timeOfDay == "night") { btn.style.background = "#325c80"; }
+                    } else {
+                        app.style.backgroundImage = `url(./image/${timeOfDay}/snow.avif)`;
+                        btn.style.background = "#4d72aa"
+                        if (timeOfDay == "night") {
+                            btn.style.background = "#1b1b1b";
+                        }
+                    }
+                    app.style.opacity = "1";
+                })
+            .catch(() => {
+                alert('city not found,pleade try again');
+                app.style.opacity = "1";
+            });
+        }
+    fetchWeatherData();
+    app.style.opacity = "1";
