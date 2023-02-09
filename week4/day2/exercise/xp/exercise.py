@@ -62,7 +62,9 @@
 #         print("You chose one of your favorite fruits! Enjoy!")
 
 # else:
-#     print("You chose a new fruit. I hope you enjoy")
+#     print("You chose a new fruit. I hope y#This code takes a sentence input from user and reverses it
+
+
 
 # ex8
 # topping= input("add topping on your pizza:")
@@ -88,7 +90,7 @@
 #           active = False
 #     else:
 #           price.append(15)
-# print(sum(price))
+# print("rs",sum(price))
 
 # teenagers_group= int(input("how many teenagers? "))
 # teens_allowed=[]
@@ -102,21 +104,21 @@
             
 
 # ex 10,11
-sandwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Avocado sandwich", "Pastrami sandwich" ,"Egg sandwich", "Sabih sandwich", "Pastrami sandwich"]
-print(sandwich_orders)
-finished_sandwiches =[]
+# sandwich_orders = ["Tuna sandwich", "Pastrami sandwich", "Avocado sandwich", "Pastrami sandwich" ,"Egg sandwich", "Sabih sandwich", "Pastrami sandwich"]
+# print(sandwich_orders)
+# finished_sandwiches =[]
 
-print("The Deli has run out of pastrami")
-while 'Pastrami sandwich' in sandwich_orders:
-    sandwich_orders.remove('Pastrami sandwich')
-print()
-while sandwich_orders:
-    current_sandwich = sandwich_orders.pop()
-    print(f"i made your {current_sandwich}")
-    finished_sandwiches.append(current_sandwich)
-print()
-for finished_sandwich in finished_sandwiches:
-    print(finished_sandwich)
+# print("The Deli has run out of pastrami")
+# while 'Pastrami sandwich' in sandwich_orders:
+#     sandwich_orders.remove('Pastrami sandwich')
+# print()
+# while sandwich_orders:
+#     current_sandwich = sandwich_orders.pop()
+#     print(f"i made your {current_sandwich}")
+#     finished_sandwiches.append(current_sandwich)
+# print()
+# for finished_sandwich in finished_sandwiches:
+#     print(finished_sandwich)
 
 
 

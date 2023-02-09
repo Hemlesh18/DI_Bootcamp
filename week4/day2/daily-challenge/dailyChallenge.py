@@ -8,15 +8,15 @@
 # print(multiple_list)
 
 # Challenge 2
-user_word = input("enter a word : ")
-new_word=""
-for word in range(len(user_word)):
-    if word == 0:
-        new_word += user_word[word]
-    elif user_word[word] != user_word[word - 1]:
-        new_word += user_word[word]
+# user_word = input("enter a word : ")
+# new_word=""
+# for word in range(len(user_word)):
+#     if word == 0:
+#         new_word += user_word[word]
+#     elif user_word[word] != user_word[word - 1]:
+#         new_word += user_word[word]
 
-print(f"Word without duplicate: {new_word}")
+# print(f"Word without duplicate: {new_word}")
 
 # word = input("Enter a word: ")
 # new_word = ""
@@ -24,6 +24,9 @@ print(f"Word without duplicate: {new_word}")
 #   if i == 0 or word[i] != word[i-1]:
 #     new_word += word[i]
 # print(f"Word without duplicate: {new_word}")
+
+
+
 
 
 
