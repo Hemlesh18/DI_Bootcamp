@@ -35,7 +35,7 @@
 # sara_pet.walk()
 
 # 2
-class Dog():
+class Dog:
     def __init__(self,name,age,weight):
         self.name=name 
         self.age=int(age)

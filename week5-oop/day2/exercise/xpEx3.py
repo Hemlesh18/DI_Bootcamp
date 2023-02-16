@@ -1,19 +1,20 @@
 from w5exxp import Dog
 
 class petDog(Dog):
-    def __init__(self,trained= False):
+    def __init__(self,name,age,weight,trained= False):
+       Dog.__init__(self,name,age,weight)
        self.trained = trained
     def train(self):
-        print(Dog.bark())
+        print(self.bark())
         self.trained= True
 
     def play(self, *args):
         print(f"{args} all play together ")
-    play(Dog.__init__())
+   
 
     def do_a_trick(self):
         if self.trained == True:
-            print(f"{Dog.__init__()} do this")
+            print(f"{self.name} do this")
 
         else:
             pass
