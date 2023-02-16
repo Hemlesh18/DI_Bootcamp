@@ -11,9 +11,10 @@ class Farm:
             self.animals[type] = count
     
     def get_info(self):
-        print(f"{self.name}'s farm")
+        output=f"{self.name}'s farm"
         for type, count in self.animals.items():
-            print(f'{type} : {count}')
+            output=output+f"\n{type} :{count}"
+        return output
 
     def get_animal_types(self):
         animal_types = []
