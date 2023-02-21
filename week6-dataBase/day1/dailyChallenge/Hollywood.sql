@@ -16,3 +16,5 @@
 -- INSERT INTO actors (first_name, last_name, age, number_oscars)
 -- VALUES('Ben','Ten','06/09/1891', 3),('Alex','Como','26/05/1961', 3),('Humpy','Rex','10/11/1999', 3);
 -- SELECT * FROM actors;
+-- SELECT first_name AS name_actor, age AS birth_date FROM actors;
+
