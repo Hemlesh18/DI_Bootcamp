@@ -39,18 +39,7 @@
 # should have a shuffle method which makes sure the deck of cards has all 52 cards and then rearranges them randomly.
 # should have a method called deal which deals a single card from the deck. After a card is dealt, it should be removed from the deck.
 
-import itertools, random
 
-class Card:
-
-    deck = list(itertools.product(range(1,14),['Spade','Heart','Diamond','Club']))
-    random.shuffle(deck)
-
-    print("You got:")
-    for i in range(1):
-        print(deck[i][0], "of", deck[i][1])
-
-deck = Card()
 
 
 
