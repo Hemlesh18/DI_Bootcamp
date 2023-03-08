@@ -1,5 +1,6 @@
- {% extends "base.html" %} {% block content %}
-<h1>People</h1>
+{% extends 'base.html' %} {% block content %}
+<h1>People List</h1>
+
 <table>
     <thead>
         <tr>
@@ -10,9 +11,9 @@
         </tr>
     </thead>
     <tbody>
-        {% for person in people_list %}
+        {% for person in people %}
         <tr>
-            <td><a href="{% url 'person' person.id %}">{{ person.id }}</a></td>
+            <td><a href="{% url 'person_detail' person.id %}">{{ person.id }}</a></td>
             <td>{{ person.name }}</td>
             <td>{{ person.age }}</td>
             <td>{{ person.country }}</td>
@@ -20,4 +21,5 @@
         {% endfor %}
     </tbody>
 </table>
+
 {% endblock %}
