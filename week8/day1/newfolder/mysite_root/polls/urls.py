@@ -9,7 +9,7 @@ urlpatterns = [
 # '' : empty string and /
 # views.index : index function in views.py
 # name='index' : name of the routeurlpatterns = [
-urlpatterns = [
-    path('articles/<int:year>/', views.year_archive),
-    path('articles/<str:season>/<int:month>/', views.month_archive),
-]
+# urlpatterns = [
+#     path('articles/<int:year>/', views.year_archive),
+#     path('articles/<str:season>/<int:month>/', views.month_archive),
+# ]

@@ -1,0 +1,106 @@
+{
+    "animals": [{
+            "id": 1,
+            "name": "Dog",
+            "legs": 4,
+            "weight": 5.67,
+            "height": 4.2,
+            "speed": 34,
+            "family": 2
+        },
+        {
+            "id": 2,
+            "name": "Domestic Cat",
+            "legs": 2,
+            "weight": 5.67,
+            "height": 4.2,
+            "speed": 34,
+            "family": 1
+        },
+        {
+            "id": 3,
+            "name": "Panther",
+            "legs": 2,
+            "weight": 5.67,
+            "height": 4.2,
+            "speed": 34,
+            "family": 1
+        }, {
+            "id": 4,
+            "name": "Lion",
+            "legs": 4,
+            "weight": 190,
+            "height": 1.2,
+            "speed": 50,
+            "family": 1
+        },
+        {
+            "id": 5,
+            "name": "Anaconda",
+            "legs": 0,
+            "weight": 550,
+            "height": 5.21,
+            "speed": 6,
+            "family": 4
+        },
+        {
+            "id": 6,
+            "name": "Monarch Butterfly",
+            "legs": 6,
+            "weight": 0.5,
+            "height": 0.1,
+            "speed": 12,
+            "family": 5
+        },
+        {
+            "id": 7,
+            "name": "Black Widow Spider",
+            "legs": 8,
+            "weight": 0.01,
+            "height": 0.75,
+            "speed": 1.5,
+            "family": 6
+        },
+        {
+            "id": 8,
+            "name": "Frog",
+            "legs": 4,
+            "weight": 0.1,
+            "height": 0.05,
+            "speed": 5,
+            "family": 7
+        }
+    ],
+    "families": [{
+            "id": 1,
+            "name": "Felidae"
+        },
+        {
+            "id": 2,
+            "name": "Caninae"
+        },
+        {
+            "id": 3,
+            "name": "Mammal"
+        },
+        {
+            "id": 4,
+            "name": "Reptile"
+        },
+        {
+            "id": 5,
+            "name": "insect"
+
+        },
+        {
+            "id": 6,
+            "name": "Arachnid"
+        },
+        {
+            "id": 7,
+            "name": "Amphibian"
+
+        }
+
+    ]
+}
