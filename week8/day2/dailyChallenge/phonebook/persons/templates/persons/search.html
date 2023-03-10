@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block content %}
+<h1>{{ title }}</h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="query">Query:</label>
+    <input type="text" name="{{ title.lower() }}" id="query">
+    <input type="submit" value="Search">
+</form>
+{% endblock %}

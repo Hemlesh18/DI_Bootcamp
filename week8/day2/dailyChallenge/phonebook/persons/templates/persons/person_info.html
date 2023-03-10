@@ -1,0 +1,7 @@
+{% extends 'base.html' %} {% block content %} {% if error %}
+<p>{{ error }}</p>
+{% else %}
+<h1>{{ person.name }}</h1>
+<p>Email: {{ person.email }}</p>
+<p>Phone number: {{ person.phone_number }}</p>
+<p>Address
