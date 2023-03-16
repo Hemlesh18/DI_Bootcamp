@@ -1,0 +1,11 @@
+{
+    "launch": {
+
+        "configurations": [],
+        "compounds": []
+    },
+    "html.format.contentUnformatted": "pre,code,textarea",
+    "html.format.extraLiners": "head, body, /html",
+    "html.format.preserveNewLines": false,
+    "html.format.unformatted": ""
+}
